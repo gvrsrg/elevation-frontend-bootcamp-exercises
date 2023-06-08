@@ -1,0 +1,37 @@
+#example1 {
+    position: relative;
+    margin:auto;
+    width: 300px;
+}
+
+img {
+    width: 100%;
+}
+
+
+.child {
+    position: absolute;
+    padding: 5px;
+}
+
+#child1 {
+    left: 0;
+
+
+}
+
+#child2 {
+    right: 0;
+
+}
+
+
+#child3 {
+    bottom: 0;
+  }
+  
+  #child4 {
+    bottom : 0;
+    right: 0;
+
+  }
