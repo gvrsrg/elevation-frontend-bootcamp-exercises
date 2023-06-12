@@ -14,10 +14,13 @@ const coffeeShop = {
     // TODO: Finish this method
     if (!(this.drinkRequirements[drinkType])) {
       alert("Sorry, we don't make " + drinkType)
+      return false
     } else if (this.beans < this.drinkRequirements[drinkType].beanRequirement) {
       alert("Sorry, we’re all out of beans!")
+      return false
     } else {
       this.beans -= this.drinkRequirements[drinkType].beanRequirement
+      return true
     }
 
   },
@@ -33,16 +36,9 @@ const coffeeShop = {
   },
 
   buyDrink: function (drinkType) {
-    if (!(this.drinkRequirements[drinkType])) {
-      alert("Sorry, we don't make " + drinkType)
-      return
-    } else if (this.beans < this.drinkRequirements[drinkType].beanRequirement) {
-      alert("Sorry, we’re all out of beans!")
-      return
-    } else {
+    if (this.makeDrink(drinkType))) {
       this.money += this.drinkRequirements[drinkType].price
       console.log(`Making ${drinkType} for ${this.drinkRequirements[drinkType].price}$`)
-      this.makeDrink(drinkType)
     }
 
   }
