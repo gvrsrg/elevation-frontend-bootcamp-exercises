@@ -22,7 +22,6 @@ const coffeeShop = {
       this.beans -= this.drinkRequirements[drinkType].beanRequirement
       return true
     }
-
   },
 
   buyBeans: function (numBeans) {
@@ -40,9 +39,7 @@ const coffeeShop = {
       this.money += this.drinkRequirements[drinkType].price
       console.log(`Making ${drinkType} for ${this.drinkRequirements[drinkType].price}$`)
     }
-
   }
-
 }
 
 
