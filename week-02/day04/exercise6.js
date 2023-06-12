@@ -13,10 +13,10 @@ const coffeeShop = {
   makeDrink: function (drinkType) {
     // TODO: Finish this method
     if (!(this.drinkRequirements[drinkType])) {
-      alert("Sorry, we don't make " + drinkType)
+      console.log("Sorry, we don't make " + drinkType)
       return false
     } else if (this.beans < this.drinkRequirements[drinkType].beanRequirement) {
-      alert("Sorry, we’re all out of beans!")
+      console.log("Sorry, we’re all out of beans!")
       return false
     } else {
       this.beans -= this.drinkRequirements[drinkType].beanRequirement
@@ -28,7 +28,7 @@ const coffeeShop = {
   buyBeans: function (numBeans) {
     var costOfPurchase = numBeans * this.beanPrice;
     if (this.money < costOfPurchase) {
-      alert("Not enough money to buy beans!")
+      console.log("Not enough money to buy beans!")
     } else {
       this.money -= costOfPurchase;
       this.beans += numBeans;
