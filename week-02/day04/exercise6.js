@@ -12,7 +12,7 @@ const coffeeShop = {
 
   makeDrink: function (drinkType) {
     // TODO: Finish this method
-    if (!(this.drinkRequirements[drinkType])) {
+    if (!(drinkType in this.drinkRequirements)) {
       console.log("Sorry, we don't make " + drinkType)
       return false
     } else if (this.beans < this.drinkRequirements[drinkType].beanRequirement) {
