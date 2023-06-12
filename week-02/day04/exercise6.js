@@ -36,7 +36,7 @@ const coffeeShop = {
   },
 
   buyDrink: function (drinkType) {
-    if (this.makeDrink(drinkType))) {
+    if (this.makeDrink(drinkType)) {
       this.money += this.drinkRequirements[drinkType].price
       console.log(`Making ${drinkType} for ${this.drinkRequirements[drinkType].price}$`)
     }
