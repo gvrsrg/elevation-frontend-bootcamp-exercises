@@ -6,7 +6,7 @@
     grid-template-areas: 
     "l m m"
     "w w w"
-    "b b b";
+    ". . b";
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }
 
@@ -21,7 +21,7 @@
 }
 
 .nav-item{
-    display:inline-block;
+    display: grid;
     align-content: center;
     color: red;
     height: 100%;
