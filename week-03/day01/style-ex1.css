@@ -45,7 +45,6 @@ body{
 }
 
 .in-message{
-    padding: 15px;
     margin: 10px;
     border-radius: 3px;
     background-color: #bdc3c7;
@@ -55,7 +54,7 @@ body{
 
 .out-message{
     height: fit-content;
-    padding: 15px;
+
 
     margin-left: auto;
     margin-right: 1em;
@@ -65,12 +64,15 @@ body{
 }
 
 .text {
-
+    text-align: left;
+    font-size: medium;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .time{
     text-align: end;
-    font-size: small;
+    font-size: 10px;
 }
 .enter-area{
     grid-area: f;
