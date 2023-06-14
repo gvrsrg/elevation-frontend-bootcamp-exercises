@@ -1,0 +1,38 @@
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 14fr 1fr;
+    grid-template-rows: 1fr 14fr 1fr;
+    grid-template-areas: 
+    "l m m"
+    "w w w"
+    "b b b";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+
+.logo{
+    grid-area: l;
+    display: grid;
+}
+
+.menu{
+    grid-area: m;
+    display: grid;
+}
+
+.nav-item{
+    display:inline-block;
+    align-content: center;
+    color: red;
+    height: 100%;
+}
+
+.workarea{
+    grid-area: w;
+    display: grid;
+}
+
+.bottom{
+    grid-area: b;
+    display: grid;
+}

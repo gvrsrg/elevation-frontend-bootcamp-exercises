@@ -64,6 +64,14 @@ body{
     width: fit-content;
 }
 
+.text {
+
+}
+
+.time{
+    text-align: end;
+    font-size: small;
+}
 .enter-area{
     grid-area: f;
     padding: 0;
