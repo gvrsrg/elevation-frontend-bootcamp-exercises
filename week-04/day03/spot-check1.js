@@ -1,4 +1,4 @@
-const family = function() {
+const Family = function() {
 
     let members = [];
     
@@ -11,7 +11,7 @@ const family = function() {
     return birth
 }
 
-const giveBirth = family()
+const giveBirth = Family()
 
 giveBirth('Alice')
 giveBirth('Bob')
