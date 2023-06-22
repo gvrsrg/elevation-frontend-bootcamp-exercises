@@ -1,19 +1,19 @@
 const Bank = function() {
     var _money = 500
 
-    const deposit = function(sum){
+    const depositCash  = function(sum){
         _money += sum
     }
 
-    const showBalance = function(str){
+    const checkBalance  = function(str){
         console.log(_money)
     }
 
     
 
     return {
-        deposit: deposit,
-        showBalance: showBalance
+        deposit: depositCash ,
+        showBalance: checkBalance 
     }
 }
 
