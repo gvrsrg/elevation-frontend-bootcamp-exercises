@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="playing-field" class="centered">
+            <div id="ball" class="centered"></div>
+        </div>
+        <div id="arrows" class="centered">
+            <div id="up" class="arrow" onclick="moveUp()">&uarr;</div>
+            <div id="left" class="arrow" onclick="moveLeft()">&larr;</div>
+            <div id="right" class="arrow" onclick="moveRight()">&rarr;</div>
+            <div id="down" class="arrow" onclick="moveDown()">&darr;</div>
+        </div>
+    </div>
+    <div id="box" onclick="clickColor()">Hover over me!</div>
+    <div id="box2" onclick="clickColor()">Hover over me again!</div>    
+    <div onclick="addItem()">
+        <ul id="list" >
+            <li>Start</li>
+            <li>Click us!</li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
