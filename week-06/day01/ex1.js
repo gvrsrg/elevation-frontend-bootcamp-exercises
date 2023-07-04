@@ -1,4 +1,4 @@
-{
+let recipe = {
     "name": "Mashed Potatoes",
     "serves": 4,
     "ingredients": [
