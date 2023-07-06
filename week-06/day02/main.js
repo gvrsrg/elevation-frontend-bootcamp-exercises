@@ -29,3 +29,19 @@ var classTemplate = Handlebars.compile(classSource)
 var newHTML = classTemplate(classData);
 
 $('.class').append(newHTML);
+
+const menuData = {
+    menu: [
+      { name: "Google", link: "http://google.com", socialNetwork:false },
+      { name: "Facebook", link: "http://facebook.com", socialNetwork:true },
+      { name: "Instagram", link: "http://nstagram.com", socialNetwork:true },
+      { name: "Twitter", link: "http://twitter.com", socialNetwork:true },
+    ]
+  };
+  
+  const menuSource = $('#menu-template').html();
+  const menuTemplate = Handlebars.compile(menuSource);
+  const menuNewHTML = menuTemplate(menuData);
+  
+  // append our new html to the page
+  $('.menu').append(menuNewHTML);

@@ -30,19 +30,22 @@
 
     <div class="class"></div>
 
-    <script src="main.js"></script>
+
 
     <script id="menu-template" type="text/x-handlebars-template">
   <ul>
     {{#each menu}}
+    {{#if socialNetwork}}
       <li><a href="{{link}}">{{name}}</a></li>
+    {{/if}}  
     {{/each}}
   </ul>
-</script>
+    </script>
 
     <div class="menu">
     </div>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
