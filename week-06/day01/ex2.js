@@ -1,6 +1,8 @@
 let recipe = {
     "name": "Mashed Potatoes",
     "serves": 4,
+    "calories": 250,
+    "healthy": true,
     "ingredients": [
       {
         "name": "water"
@@ -31,6 +33,7 @@ let recipe = {
       }
     ],
     "directions": [
+      "Cut potatoes into half inch thick slices",
       "Add potatoes to a pot and cover with an inch of water.",
       "Bring the water to a boil over high heat, then reduce to a simmer and cover.",
       "Simmer for 20 minutes or until potatoes are fork tender.",
@@ -40,3 +43,9 @@ let recipe = {
       "Serve immediately, or cover and refrigerate."
     ]
   }
+
+
+console.log(recipe.ingredients.filter(i => i.name == "garlic powder")[0].count) //should print 2
+console.log(recipe.healthy) //should print true
+console.log(recipe.calories) //should print 250
+console.log(recipe.directions[0]) //should print "Cut potatoes into half inch thick slices"
