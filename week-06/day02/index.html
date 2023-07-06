@@ -45,6 +45,35 @@
     <div class="menu">
     </div>
 
+<script id="animals-template" type="text/x-handlebars-template">   
+  <ul>   {{#each this }}
+     <li> Animal: {{this}}</li>
+    {{/each}}
+</ul> 
+</script>
+
+<div id="normal">Regular HTML Stuff</div>
+
+<script id="languages-template" type="text/x-handlebars-template">   
+  <ul>   {{#each this }}
+     <li> Language: {{this}}</li>
+    {{/each}}
+</ul>
+</script>
+
+<p id="special"></p>
+
+
+    <div id="animals">
+    </div>
+    
+    <div id="languages">
+    </div>
+
+
+
+
+
     <script src="main.js"></script>
 </body>
 
