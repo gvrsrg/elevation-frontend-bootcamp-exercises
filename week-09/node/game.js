@@ -1,0 +1,5 @@
+const Player = require("./Player")
+console.log(Player)
+const p1 = new Player("the_best")
+p1.say("bla bla bla")
+console.log(Player)
