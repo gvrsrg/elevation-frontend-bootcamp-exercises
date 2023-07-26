@@ -28,9 +28,9 @@ console.log(clean_text.toLowerCase());
 
 function createFakeUser() {
     return {
-      avatar: faker.image.avatar(),
-      name: faker.person.firstName(),
-      company: faker.company.name()
+        avatar: faker.image.avatar(),
+        name: faker.person.firstName(),
+        company: faker.company.name()
     };
   }
 
