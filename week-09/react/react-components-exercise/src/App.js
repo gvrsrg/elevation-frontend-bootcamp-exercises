@@ -29,7 +29,9 @@ export function App() {
       <div className="ex-space">
         <h4 className="ex-title">Exercise 4</h4>
         <div className="exercise" id="ex-4">
-          {/* your code here... */}
+          <NavBar />
+          <Menu />
+          <Checkout />
         </div>
       </div>
     </div>
