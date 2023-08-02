@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 const Task = ({task, markComplete}) => {
     const complete = () => markComplete(task.text)
     return (
@@ -18,7 +18,7 @@ const SpotCheck = () => {
     const markComplete = (text) => {
         let newTasks = [...tasks]
         newTasks.find(t => t.text === text).complete = true
-        setTasks(newTasks);
+        setTasks(newTasks)
     }
 
     return tasks
