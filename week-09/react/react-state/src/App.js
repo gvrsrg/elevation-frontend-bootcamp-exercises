@@ -9,6 +9,8 @@ import { useState } from 'react';
 import Hot from './components/Hot';
 import Cold from './components/Cold';
 import Houdini from './components/Hudini';
+import Landing from './components/Landing';
+import Home from './components/Home';
 
 
 function App() {
@@ -33,6 +35,32 @@ function App() {
     setTemperature(!temperature)
   }
 
+  const [userData, setUserData] = useState(  
+    {
+      user: "Robyn",
+      store: [
+        { item: "XSPS Pro Player", price: 800, discount: 0.2, hottest: false },
+        { item: "Gizem Backwatch", price: 230, discount: 0.6, hottest: false },
+        { item: "Surround Sound Pelican", price: 3099, discount: 0.05, hottest: true }
+      ],
+      shouldDiscount: true,
+      currentPage: "Home"
+    }) 
+
+    const togglePage = function() {
+      let newUserData = {...userData}
+      newUserData.store = [...userData.store]
+      newUserData.currentPage = (userData.currentPage === "Landing" ? "Home" : "Landing") 
+      setUserData(newUserData)
+    }
+  
+    const toggleDiscount = function() {
+      let newUserData = {...userData}
+      newUserData.store = [...userData.store]
+      newUserData.shouldDiscount = !userData.shouldDiscount; 
+      setUserData(newUserData)
+    }
+
   return (
     <div>
 
@@ -46,6 +74,13 @@ function App() {
       {temperature ? <Hot/> : <Cold/>}
           <button onClick={toggleTemperature}>Change Temp!</button>
      <Houdini />
+
+     {userData.currentPage === "Landing" ? <Landing data={userData}/> : <Home store={userData.store} shouldDiscount={userData.shouldDiscount}/> }
+      <button onClick={togglePage}>Now shown {userData.currentPage} (press to toggle)</button>
+      <button disabled={userData.currentPage === "Landing"} onClick={toggleDiscount}>
+          {userData.shouldDiscount ? "Discounted" : "Full"} prices (press to toggle)
+        </button>
+
     </div>
 
 
