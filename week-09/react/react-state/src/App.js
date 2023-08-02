@@ -8,6 +8,7 @@ import Register from './components/Register';
 import { useState } from 'react';
 import Hot from './components/Hot';
 import Cold from './components/Cold';
+import Houdini from './components/Hudini';
 
 
 function App() {
@@ -44,7 +45,10 @@ function App() {
 
       {temperature ? <Hot/> : <Cold/>}
           <button onClick={toggleTemperature}>Change Temp!</button>
+    <Houdini />
     </div>
+
+
   );
 }
 
