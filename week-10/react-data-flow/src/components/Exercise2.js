@@ -58,7 +58,7 @@ function Exercise2() {
     return ( 
         <div> {convers.displayConversation === null ?
             <List contacts={getContacts()} displayConvo={displayConvo}/>:
-            <Conversation conversation={findConversByName(convers.displayConversation)}/>
+            <Conversation conversation={findConversByName(convers.displayConversation)} displayConvo={displayConvo}/>
             }
         </div>
     )

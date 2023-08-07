@@ -49,13 +49,23 @@
 }
 
 .other-message {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
   text-align: right;
   background-color: gray;
   color: white;
 }
 
 .self-message {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
   text-align: left;
   background-color: green;
   color: white;
+}
+
+.author {
+  font-style: italic;
 }
