@@ -37,7 +37,7 @@ function Exercise2() {
 
     const [convers, setConvers] = useState (conversationData)
 
-    const showConvers = function(withWhom) {
+    const displayConvo = function(withWhom) {
         const newConvers = {...convers};
         newConvers.displayConversation = withWhom;
         setConvers(newConvers);
@@ -57,8 +57,8 @@ function Exercise2() {
 
     return ( 
         <div> {convers.displayConversation === null ?
-            <List contacts={getContacts()} />:
-            <Conversation conversation={findConversByName(convers.displayConversation)} showConversation={showConvers}/>
+            <List contacts={getContacts()} displayConvo={displayConvo}/>:
+            <Conversation conversation={findConversByName(convers.displayConversation)}/>
             }
         </div>
     )

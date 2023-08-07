@@ -1,7 +1,6 @@
-function Contact({contact}) {
+function Contact({contact, displayConvo}) {
     return (<div class="contact">
-            {contact}
-
+            <p onClick={()=>displayConvo(contact)}>{contact}</p>
             </div> )
 }
 

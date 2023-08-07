@@ -40,3 +40,22 @@
 .list {
   text-align: left;
 }
+
+
+
+.conversation-header {
+  text-align: center;
+  font-size:xx-large;
+}
+
+.other-message {
+  text-align: right;
+  background-color: gray;
+  color: white;
+}
+
+.self-message {
+  text-align: left;
+  background-color: green;
+  color: white;
+}
