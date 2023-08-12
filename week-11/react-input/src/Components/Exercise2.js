@@ -5,13 +5,13 @@ const Exercise2 = () => {
     const [fruit, setFruit] = useState("");
 
     const changeFruit = function(e){
-        setFruit(e => e.target.value)
+        setFruit(e)
 
-        showFruit()
+        showFruit(e)
     }
 
-    const showFruit = function(){
-        console.log(`${name} chose ${fruit}`)
+    const showFruit = function(e){
+        console.log(`${name} chose ${e}`)
         
 
     }
@@ -20,7 +20,7 @@ const Exercise2 = () => {
     return (
         <div>
             <input id="name-input" onChange={(e) => setName(e.target.value)} value={name} />
-            <select id="select-input" onChange={changeFruit} value={fruit}>
+            <select id="select-input" onChange={(e) => changeFruit(e.target.value)} value={fruit}>
                 <option value="banana">banana</option>
                 <option value="mango">mango</option>
                 <option value="pineapple">pineapple</option>
