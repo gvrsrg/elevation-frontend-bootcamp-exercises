@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react';
+import Exercise1 from './Components/Exercise1';
 
 function App() {
   const [titleIndex, setTitleIndex] = useState(0)
@@ -28,6 +29,7 @@ function App() {
   return (
     <div>
       <div className="box">{titles[titleIndex]}</div>
+      <div className="box"><Exercise1/></div>
     </div>
   );
 }
